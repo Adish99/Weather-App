@@ -72,8 +72,16 @@ body{
 
 /* Weather Image */
 .weather-icon{
-    width:120px;
-    margin:10px auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:15px 0;
+}
+
+.weather-icon img{
+    width:140px;
+    height:140px;
+    object-fit:contain;
 }
 
 /* Temperature */
@@ -133,8 +141,20 @@ body{
 /* Error Message */
 .error{
     margin-top:20px;
-    color:#ffb3b3;
-    font-size:0.95rem;
+    color:darkred;
+    font-size:1.56rem;
+}
+
+.footer{
+    margin-top:25px;
+    text-align:center;
+    color:green;
+    font-size:0.9rem;
+}
+
+.footer span{
+    font-weight:600;
+    color:blueviolet;
 }
 
 /* Tablet */
@@ -155,7 +175,13 @@ body{
 
     .weather-icon{
         width:100px;
+        margin-left:4rem;
     }
+    .weather-icon img{
+        width:120px;
+        height:120px;
+    }
+
 }
 
 /* Mobile */
@@ -197,5 +223,9 @@ body{
     .detail-box{
         width:100%;
         justify-content:center;
+    }
+     .weather-icon img{
+        width:100px;
+        height:100px;
     }
 }
